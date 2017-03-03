@@ -11,4 +11,5 @@ if (! function_exists('activity')) {
         $defaultLogName = config('laravel-activitylog.default_log_name');
         return app(ActivityLogger::class)->useLog($logName != null ? $logName : $defaultLogName);
     }
+    
 }
